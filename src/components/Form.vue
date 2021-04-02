@@ -11,7 +11,7 @@
 				<c-stack :spacing="5" p="1em"  align="flex-end" class="control">
 					<c-form-control :paddingTop="['1em', '0em']">
 						<c-form-label for="kelompok">Jumlah Kelompok</c-form-label>
-						<c-input type="Number" v-model="jumlahAnggota"  id="kelompok" keyup="buatKelompok()" />
+						<c-input type="Number" v-model="jumlahKelompok"  id="kelompok" keyup="buatKelompok()" />
 					</c-form-control>
 					<c-button px="3em" variant-color="green" @click="buatKelompok()">Buat Kelompok</c-button>
 				</c-stack>
@@ -44,7 +44,7 @@ export default{
 		return{
 			anggota:'',
 			arrayAnggota:[],
-			jumlahAnggota:'',
+			jumlahKelompok:'',
 			img: img
 		}
 	},

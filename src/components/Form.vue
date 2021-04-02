@@ -18,7 +18,7 @@
 			</c-flex>
 		</c-flex>
 
-		<!-- result -->
+		<!-- result-->
 		<c-box>
 			<c-text fontSize="1.5em" fontWeight="700" textAlign="center">Kelompok Belajar</c-text>
 			<c-flex flexWrap="wrap" justifyContent="center">

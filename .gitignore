@@ -2,7 +2,8 @@
 node_modules
 /dist
 
-anggota.js
+/src/anggota.js
+/src/components/Form_duplicated.vue
 
 # local env files
 .env.local

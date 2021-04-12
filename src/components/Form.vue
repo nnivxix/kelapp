@@ -3,7 +3,7 @@
 		<c-flex p="30px" :direction="[ 'column', 'row', 'row']">
 			<c-box :w="['100%', '50%']" maxH="270px">
 				<c-text fontSize="1.3em">Masukan Nama Peserta</c-text>
-				<c-textarea h="40vh" v-model="anggota"  placeholder="Masukan nama seluruh siswa" />
+				<c-textarea h="40vh" v-model="anggota"  placeholder="Masukan Nama Seluruh Peserta" />
 				<c-text :fontSize="['0.7em', '0.9em']" color="gray.500">Masukan nama kemudian pisahkan dengan koma (,) misal: "Koko Kurniawan, Robertos Carlos"</c-text>
 				<!-- <c-text>{{students}}</c-text> -->
 				<!-- <c-text>this.$store.</c-text> -->
@@ -13,7 +13,7 @@
 				<c-flex :flexDirection="['column', 'row']" :alignItems="['center','flex-end']" p="1em"   align="flex-end" >
 					<c-form-control class="form-control" px="10px" :paddingTop="['1em', '0em']">
 						<c-form-label fontWeight="bold" textAlign="['center', 'left']" for="kelompok">Jumlah Kelompok</c-form-label>
-						<c-input type="Number" :my="['0.8em','0']"  id="kelompok" v-model="amount" />
+						<c-input type="Number" :my="['0.8em','0']"  id="kelompok" v-model="amount" v-on:keyup.enter="createGroup" />
 					</c-form-control>
 					<c-button px="3em" variant-color="green" @click="createGroup()" >Buat Kelompok</c-button>
 				</c-flex>

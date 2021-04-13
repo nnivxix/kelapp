@@ -10,7 +10,7 @@
 					</c-box>			
 			</c-box>
 		</c-flex>
-		<c-flex v-else justifyContent="center"> <c-text>Belum Ada Grup yang dibuat</c-text> </c-flex>
+		<c-flex v-else justifyContent="center"> <c-text>Belum ada grup yang dibuat</c-text> </c-flex>
 	</c-box>
 </template>
 

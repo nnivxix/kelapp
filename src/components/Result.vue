@@ -10,15 +10,15 @@
 					</c-box>			
 			</c-box>
 		</c-flex>
-		<c-flex v-else justifyContent="center"> <c-text>Belum ada grup yang dibuat</c-text> </c-flex>
+		<c-flex v-else justifyContent="center"> <c-text><c-icon name="warning"  /> Belum ada grup yang dibuat</c-text> </c-flex>
 	</c-box>
 </template>
 
 
 <script>
-import { CText,  CFlex, CBox,    } from '@chakra-ui/vue'
+import { CText,  CFlex, CBox, CIcon   } from '@chakra-ui/vue'
 export default{
-		components:{ CText, CFlex, CBox,    },
+		components:{ CText, CFlex, CBox, CIcon   },
 	};
 </script>
 

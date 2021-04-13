@@ -3,7 +3,7 @@
 		<c-flex p="30px" :direction="[ 'column', 'row', 'row']">
 			<c-box :w="['100%', '50%']" maxH="270px">
 				<c-text fontSize="1.3em">Masukan Nama Peserta</c-text>
-				<c-textarea  v-model="anggota"  placeholder="Masukan Nama Seluruh Peserta" />
+				<c-textarea h="14em" v-model="anggota"  placeholder="Masukan Nama Seluruh Peserta" />
 				<c-text :fontSize="['0.7em', '0.9em']" color="gray.500">Masukan nama kemudian pisahkan dengan koma (,) misal: "Koko Kurniawan, Robertos Carlos"</c-text>
 				<!-- <c-text>{{students}}</c-text> -->
 				<!-- <c-text>this.$store.</c-text> -->

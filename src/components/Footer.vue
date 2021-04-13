@@ -6,10 +6,10 @@
 
 
 <script>
-import { CFlex, CText } from "@chakra-ui/vue";
+import { CFlex, CText,  } from "@chakra-ui/vue";
 export default{
 	name: 'Footer',
-	components: {CFlex, CText}
+	components: {CFlex, CText, }
 };
 </script>
 

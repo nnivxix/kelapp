@@ -1,5 +1,8 @@
 # kelapp
 
+![Kelapp](https://github.com/nnivxix/kelapp/blob/main/public/favicon.ico)
+Kelapp merupakan _web application_ untuk membuat grup atau kelompok dengan mudah dengan hanya memasukan nama apra peserta.
+
 ## Project setup
 ```
 yarn install

@@ -6,7 +6,7 @@
       <a target="_blank" class="underline" href="https://twitter.com/nnivxix"
         >Hanasa</a
       >
-      in 🇮🇩 &#169; 2022 - v.2
+      in 🇮🇩 &#169; 2023 - v.2
     </p>
   </footer>
 </template>

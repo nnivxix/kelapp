@@ -1,11 +1,7 @@
 <template>
-  <h1 class="text-3xl font-bold underline text-red-600">Hai Vue 3</h1>
-  <p>{{ count }}</p>
-  <button @click="count++">add counter</button>
+  <Form />
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
-
-const count = ref<number>(0);
+import Form from "@/components/Form.vue";
 </script>

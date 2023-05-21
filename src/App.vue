@@ -1,5 +1,5 @@
 <template>
-  <h1>Hai Vue 3</h1>
+  <h1 class="text-3xl font-bold underline text-red-600">Hai Vue 3</h1>
   <p>{{ count }}</p>
   <button @click="count++">add counter</button>
 </template>

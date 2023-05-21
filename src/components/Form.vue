@@ -26,13 +26,25 @@
       <!-- <c-image :display="['none','block']"  :src=img alt="kerjasama"/> -->
     </div>
     <button class="bg-green-500 text-white p-2 font-bold">Buat Kelompok</button>
+    <button
+      v-if="groups.length"
+      class="bg-gray-400 text-white p-1 mt-3"
+      @click="resetGroup">
+      Reset
+    </button>
   </form>
 </template>
 
 <script setup lang="ts">
 import useGroup from "@/composables/group";
+import { useGroupStore } from "@/stores/group";
+import { storeToRefs } from "pinia";
 
-const { amount, participants, groups, createGroup } = useGroup();
+const { amount, participants, groups } = storeToRefs(useGroupStore());
+const { createGroup } = useGroup();
+function resetGroup() {
+  groups.value = [];
+}
 </script>
 
 <style scoped>

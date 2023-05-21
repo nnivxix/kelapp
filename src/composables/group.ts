@@ -1,10 +1,8 @@
-import { ref } from "vue";
+import { storeToRefs } from "pinia";
+import { useGroupStore } from "@/stores/group";
 
 export default function useGroup() {
-  const amount = ref("1");
-  const participants = ref("");
-  const groups = ref<any[]>([]);
-
+  const { amount, participants, groups } = storeToRefs(useGroupStore());
   function shuffleArray(array: string[]) {
     for (let i = array.length - 1; i > 0; i--) {
       let j = Math.floor(Math.random() * (i + 1));
@@ -36,9 +34,6 @@ export default function useGroup() {
   }
 
   return {
-    amount,
-    participants,
-    groups,
     shuffleArray,
     createGroup,
   };

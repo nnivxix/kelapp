@@ -1,12 +1,6 @@
-import Vue from 'vue'
-import App from './App.vue'
-import Chakra from '@chakra-ui/vue'
-import store from './store'
-Vue.use(Chakra)
+import { createApp } from "vue";
+import App from "./App.vue";
 
-Vue.config.productionTip = false
+const app = createApp(App);
 
-new Vue({
-	store,
-  render: h => h(App),
-}).$mount('#app')
+app.mount("#app");

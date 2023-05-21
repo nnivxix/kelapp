@@ -1,0 +1,9 @@
+{
+  "env": {
+    "node": true,
+    "es2022": true // 👈 add this
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  }
+}

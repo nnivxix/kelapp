@@ -10,10 +10,3 @@
     </p>
   </footer>
 </template>
-
-<script setup lang="ts">
-import useGroupStore from "@/stores/group";
-import { storeToRefs } from "pinia";
-
-const { amount, participants, groups } = storeToRefs(useGroupStore());
-</script>

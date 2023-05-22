@@ -3,17 +3,19 @@
     class="m-6 flex flex-col md:w-1/2 md:mx-auto"
     @submit.prevent="createGroup()">
     <div class="flex flex-col">
-      <label class="text-xl pb-2" for="participant">Masukan Nama Peserta</label>
+      <label class="text-lg md:text-2xl pb-2" for="participant"
+        >Masukan Nama Peserta</label
+      >
       <textarea
-        class="border-2 border-green-400 p-2 ring-1 focus:accent-green-400 h-40"
+        class="border-2 border-green-400 text-md md:p-3 p-2 ring-1 focus:accent-green-400 h-40"
         v-model="participants"
         placeholder="Masukan Nama Seluruh Peserta"
         required
         id="participant">
       </textarea>
       <span class="text-sm text-gray-600"
-        >Masukan nama kemudian pisahkan dengan koma (,) misal: "Koko Kurniawan,
-        Robertos Carlos"</span
+        >Masukan nama seluruh peserta kemudian pisahkan dengan koma (,) misal:
+        "Koko Kurniawan, Robertos Carlos"</span
       >
     </div>
     <div class="flex flex-col mt-4 mb-5">
@@ -25,7 +27,9 @@
         v-model="amount" />
       <!-- <c-image :display="['none','block']"  :src=img alt="kerjasama"/> -->
     </div>
-    <button class="bg-green-500 text-white p-2 font-bold">Buat Kelompok</button>
+    <button class="bg-green-500 text-white p-2 font-semibold">
+      Buat Kelompok
+    </button>
     <button
       v-if="groups.length"
       class="bg-gray-400 text-white p-1 mt-3"
@@ -37,21 +41,13 @@
 
 <script setup lang="ts">
 import useGroup from "@/composables/group";
-import { useGroupStore } from "@/stores/group";
+import useGroupStore from "@/stores/group";
 import { storeToRefs } from "pinia";
 
 const { amount, participants, groups } = storeToRefs(useGroupStore());
 const { createGroup } = useGroup();
 function resetGroup() {
   groups.value = [];
+  participants.value = "";
 }
 </script>
-
-<style scoped>
-.control {
-  align-self: self-start;
-}
-.form-control {
-  margin-bottom: 0;
-}
-</style>

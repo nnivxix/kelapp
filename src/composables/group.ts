@@ -1,5 +1,5 @@
 import { storeToRefs } from "pinia";
-import { useGroupStore } from "@/stores/group";
+import useGroupStore from "@/stores/group";
 
 export default function useGroup() {
   const { amount, participants, groups } = storeToRefs(useGroupStore());

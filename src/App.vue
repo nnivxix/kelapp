@@ -1,6 +1,6 @@
 <template>
   <Navbar />
-  <div class="flex flex-col md:flex-row mx-6">
+  <div class="flex flex-col md:flex-row mx-6 md:w-3/4 md:mx-auto">
     <Form />
     <Result />
   </div>

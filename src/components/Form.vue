@@ -49,5 +49,6 @@ const { createGroup } = useGroup();
 function resetGroup() {
   groups.value = [];
   participants.value = "";
+  amount.value = "2";
 }
 </script>

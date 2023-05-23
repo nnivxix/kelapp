@@ -2,7 +2,7 @@ import { ref } from "vue";
 import { defineStore } from "pinia";
 
 const useGroupStore = defineStore("group", () => {
-  const amount = ref("1");
+  const amount = ref("2");
   const participants = ref("");
   const groups = ref<any[]>([]);
 

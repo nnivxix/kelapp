@@ -1,27 +1,10 @@
 # kelapp
 
-![Kelapp](https://github.com/nnivxix/kelapp/blob/main/public/favicon.ico)
-Kelapp merupakan _web application_ untuk membuat grup atau kelompok dengan mudah dengan hanya memasukan nama apra peserta.
+![Kelapp builded by nnivxix](./public/kelapp.jpg)
+Kelapp merupakan _web application_ untuk membuat grup atau kelompok dengan mudah dengan hanya memasukan nama para peserta.
 
-## Project setup
-```
-yarn install
-```
+![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=flat-square&logo=vuedotjs&logoColor=%234FC08D)![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat-square&logo=typescript&logoColor=white)![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=flat-square&logo=github&logoColor=white)[![Netlify Status](https://api.netlify.com/api/v1/badges/e825b9a9-9902-4dd0-81b1-65dcd4ac5b4b/deploy-status)](https://app.netlify.com/sites/kelapp/deploys)
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+## Try out now [Kelapp](https://kelapp.netlify.app)
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![preview kelapp](public/preview.png)

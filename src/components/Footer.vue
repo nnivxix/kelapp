@@ -12,15 +12,5 @@
       >
       in 🇮🇩 &#169; 2023
     </p>
-    <p class="text-center text-red-50">
-      klik di sini untuk ber-<a
-        title="Banyak terima kasih jika Anda berdonasi di sini"
-        rel="noopener"
-        target="_blank"
-        class="underline"
-        href="https://www.nihbuatjajan.com/nnivxix"
-        >donasi</a
-      >
-    </p>
   </footer>
 </template>

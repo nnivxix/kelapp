@@ -1,10 +1,14 @@
 <template>
-  <Navbar />
-  <div class="flex flex-col md:flex-row mx-6 md:w-3/4 md:mx-auto">
-    <Form />
-    <Result />
+  <div class="min-h-screen">
+    <Navbar />
+    <div
+      class="flex flex-col md:flex-row mx-6 md:w-3/4 min-h-[70vh] md:mx-auto"
+    >
+      <Form />
+      <Result />
+    </div>
+    <Footer />
   </div>
-  <Footer />
 </template>
 
 <script setup lang="ts">

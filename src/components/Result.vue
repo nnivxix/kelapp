@@ -3,16 +3,18 @@
     <h1 class="text-center text-lg md:text-2xl mb-4">Kelompok Belajar</h1>
     <div>
       <div
-        class="grid md:grid-cols-3 lg:grid-cols-4 grid-cols-1"
-        v-if="groups.length">
+        class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-cols-1"
+        v-if="groups.length"
+      >
         <ul class="p-3" v-for="(group, index) in groups" :key="index">
           <li class="font-semibold text-2xl md:text-lg">
-            Kelompok {{ index + 1 }}
+            <b>Kelompok {{ index + 1 }} </b>
           </li>
           <li
             v-for="(participant, index) in group"
             :key="index"
-            class="text-xl">
+            class="text-xl"
+          >
             {{ participant }}
           </li>
         </ul>
@@ -30,5 +32,3 @@ import useGroupStore from "@/stores/group";
 
 const { groups } = storeToRefs(useGroupStore());
 </script>
-
-<style scoped></style>

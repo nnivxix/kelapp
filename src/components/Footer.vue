@@ -14,7 +14,7 @@ import FlagId from "@/components/FlagId.vue";
         href="https://twitter.com/nnivxix"
         >Hanasa</a
       >
-      in <FlagId /> &#169; 2023
+      in <FlagId /> &#169; 2024
     </p>
   </footer>
 </template>
